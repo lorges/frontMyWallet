@@ -1,0 +1,8 @@
+
+Loading: {{ loadingTransactions$ | async}}
+
+<ul>
+  <li *ngFor="let p of transactions$ | async"> 
+    {{p.transactionName}}
+  </li>
+</ul>
